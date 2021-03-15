@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.bbs.mapper.post.PostDao">
+    <resultMap id="PostEntity" type="com.example.bbs.mapper.post.bean.PostEntity"/>
+    <select id="getHotModule" resultType="java.lang.Integer">
+        select module from t_post
+        group by module
+        order by count(module) desc
+    </select>
+
+
+</mapper>

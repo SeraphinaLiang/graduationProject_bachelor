@@ -1,0 +1,135 @@
+├─.browserslistrc
+├─.editorconfig
+├─.eslintrc.js
+├─.gitignore
+├─babel.config.js
+├─debug.log
+├─note.md
+├─package-lock.json
+├─package.json   #依赖配置
+├─README.md
+├─vue.config.js
+├─yarn-error.log
+├─yarn.lock
+├─src
+|  ├─App.vue   #入口
+|  ├─axios.js   #axios全局登录拦截
+|  ├─main.js  #全局配置
+|  ├─permission.js  #登录路由守卫
+|  ├─views
+|  |   ├─View.vue   #基本界面结构
+|  |   ├─user  #用户相关界面
+|  |   |  ├─Index.vue   #用户主页界面
+|  |   |  ├─loginPage.vue  #登录界面
+|  |   |  ├─SignUpPage.vue  #注册界面
+|  |   |  └userPostEditPage.vue  #用户编辑帖子界面
+|  |   ├─sections  #大型组件
+|  |   |    ├─404.vue #error界面
+|  |   |    ├─Affiliates.vue
+|  |   |    ├─ContactUs.vue
+|  |   |    ├─country.vue  #offer模块选择
+|  |   |    ├─Features.vue
+|  |   |    ├─Hero.vue
+|  |   |    ├─HeroAlt.vue
+|  |   |    ├─Info.vue
+|  |   |    ├─KeepInTouch.vue
+|  |   |    ├─ModulesInfo.vue #帖子模块选择
+|  |   |    ├─Newsletter.vue
+|  |   |    ├─OffersDemo.vue  #offer内容展示
+|  |   |    ├─PersonInfo.vue  #用户主页
+|  |   |    ├─PostsDemo.vue   #帖子内容展示
+|  |   |    ├─Search.vue  #搜索框
+|  |   |    ├─SocialMedia.vue
+|  |   |    ├─ThemeFeatures.vue
+|  |   |    ├─userEdit   #用户收藏夹和发表管理
+|  |   |    |    ├─userComment.vue #用户发表的评论
+|  |   |    |    ├─userOffer.vue #用户发表的offer
+|  |   |    |    ├─userPost.vue #用户发布的帖子
+|  |   |    |    └userStar.vue #用户帖子收藏
+|  |   ├─offer #offer相关界面
+|  |   |   ├─Index.vue #论坛offer主页
+|  |   |   └offerEditPage.vue  #offer编辑界面
+|  |   ├─home #首页相关界面
+|  |   |  ├─Index.vue  #论坛首页
+|  |   |  └SearchPage.vue  #搜索结果展示界面
+|  |   ├─forum  #帖子相关界面
+|  |   |   ├─Index.vue  #论坛帖子主页
+|  |   |   └postEditPage.vue  #帖子编辑界面
+|  |   ├─404 #出错界面
+|  |   |  └Index.vue #展示出错界面
+|  ├─styles  #样式
+|  |   └variables.scss
+|  ├─store  #状态管理器
+|  |   ├─actions.js
+|  |   ├─getters.js
+|  |   ├─index.js  #store基础文件
+|  |   ├─mutations.js
+|  |   ├─state.js
+|  |   ├─modules #模块
+|  |   |    └loginModule.js #登录模块store
+|  ├─router #路由
+|  |   └index.js #路由配置文件
+|  ├─plugins #插件
+|  |    ├─base.js  #lodash
+|  |    ├─index.js #
+|  |    ├─meta.js
+|  |    ├─vuetify.js  #样式框架
+|  |    └webfontloader.js  #字体
+|  ├─mixins
+|  |   ├─heading.js
+|  |   └load-sections.js  #模块组件加载
+|  ├─layouts  组件
+|  |    ├─home
+|  |    |  ├─AppBar.vue
+|  |    |  ├─Drawer.vue
+|  |    |  ├─editer.vue  #帖子编辑组件（quill-editor富文本编辑器）
+|  |    |  ├─Footer.vue
+|  |    |  ├─Index.vue  #界面基础框架结构
+|  |    |  ├─login.vue  #登录组件
+|  |    |  ├─offer.vue  #offer编辑组件
+|  |    |  ├─PersonalInfoEdit.vue  #用户基本信息编辑组件
+|  |    |  ├─register.vue #注册组件
+|  |    |  ├─Settings.vue  #设置
+|  |    |  ├─SystemBar.vue
+|  |    |  └View.vue  #底部面板
+|  ├─components  #组件
+|  |     ├─InfoFeatures.vue
+|  |     ├─Instagram.vue
+|  |     ├─message  #全局消息提示
+|  |     |    ├─toast.js
+|  |     |    └toast.vue
+|  |     ├─base  #经过样式包装的基础复用组件
+|  |     |  ├─Avatar.vue
+|  |     |  ├─AvatarCard.vue
+|  |     |  ├─Body.vue
+|  |     |  ├─Btn.vue
+|  |     |  ├─BusinessContact.vue
+|  |     |  ├─BusinessInfo.vue
+|  |     |  ├─Card.vue
+|  |     |  ├─ContactForm.vue
+|  |     |  ├─Divider.vue
+|  |     |  ├─Heading.vue
+|  |     |  ├─Icon.vue
+|  |     |  ├─Img.vue
+|  |     |  ├─Info.vue
+|  |     |  ├─InfoCard.vue
+|  |     |  ├─Section.vue
+|  |     |  ├─SectionHeading.vue
+|  |     |  ├─Subheading.vue
+|  |     |  ├─Subtitle.vue
+|  |     |  ├─Textarea.vue
+|  |     |  ├─TextField.vue
+|  |     |  └Title.vue
+|  ├─assets  #静态图片资源
+|  |   ├─css
+|  |   |  └global.css
+├─public
+|   ├─android-chrome-192x192.png
+|   ├─android-chrome-512x512.png
+|   ├─apple-touch-icon.png
+|   ├─favicon-16x16.png
+|   ├─favicon-32x32.png
+|   ├─favicon.ico
+|   ├─index.html
+|   ├─robots.txt
+|   └site.webmanifest

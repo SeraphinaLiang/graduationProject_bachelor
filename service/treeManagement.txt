@@ -1,0 +1,110 @@
+├─.browserslistrc
+├─.editorconfig
+├─.env
+├─.eslintrc.js
+├─.gitignore
+├─babel.config.js
+├─CHANGELOG.md
+├─cypress.json
+├─debug.log
+├─demo.txt
+├─ISSUE_TEMPLATE.md
+├─jest.config.js
+├─LICENSE.md
+├─now.json
+├─package-lock.json
+├─package.json
+├─postcss.config.js
+├─README.md
+├─vue.config.js
+├─tests
+|   ├─unit
+|   |  ├─.eslintrc.js
+|   |  └example.spec.js
+|   ├─e2e
+|   |  ├─.eslintrc.js
+|   |  ├─support
+|   |  |    ├─commands.js
+|   |  |    └index.js
+|   |  ├─specs
+|   |  |   └test.js
+|   |  ├─plugins
+|   |  |    └index.js
+├─src
+|  ├─App.vue
+|  ├─axiosConfig.js
+|  ├─i18n.js
+|  ├─main.js
+|  ├─router.js
+|  ├─views
+|  |   ├─dashboard
+|  |   |     ├─Dashboard.vue
+|  |   |     ├─Index.vue
+|  |   |     ├─tables
+|  |   |     |   └RegularTables.vue
+|  |   |     ├─pages
+|  |   |     |   └UserProfile.vue
+|  |   |     ├─components
+|  |   |     |     ├─core
+|  |   |     |     |  ├─AppBar.vue
+|  |   |     |     |  ├─Drawer.vue
+|  |   |     |     |  ├─Footer.vue
+|  |   |     |     |  ├─Settings.vue
+|  |   |     |     |  └View.vue
+|  |   |     ├─component
+|  |   |     |     ├─Notifications.vue
+|  |   |     |     └Typography.vue
+|  ├─store
+|  |   └store.js
+|  ├─sass
+|  |  ├─overrides.sass
+|  |  ├─variables.scss
+|  |  ├─vuetify-material
+|  |  |        ├─_appbar.sass
+|  |  |        ├─_buttons.sass
+|  |  |        ├─_card.sass
+|  |  |        ├─_chip.sass
+|  |  |        ├─_footer.sass
+|  |  |        ├─_map.sass
+|  |  |        ├─_modal.sass
+|  |  |        ├─_notification.sass
+|  |  |        ├─_pagination.sass
+|  |  |        ├─_settings.sass
+|  |  |        ├─_sidebar.sass
+|  |  |        ├─_tab.sass
+|  |  |        ├─_table.sass
+|  |  |        └_view.sass
+|  ├─plugins
+|  |    ├─base.js
+|  |    ├─chartist.js
+|  |    ├─vee-validate.js
+|  |    └vuetify.js
+|  ├─locales
+|  |    └en.json
+|  ├─components
+|  |     ├─base
+|  |     |  ├─Card.vue
+|  |     |  ├─Item.vue
+|  |     |  ├─ItemGroup.vue
+|  |     |  ├─ItemSubGroup.vue
+|  |     |  ├─MaterialAlert.vue
+|  |     |  ├─MaterialCard.vue
+|  |     |  ├─MaterialChartCard.vue
+|  |     |  ├─MaterialSnackbar.vue
+|  |     |  ├─MaterialStatsCard.vue
+|  |     |  ├─MaterialTabs.vue
+|  |     |  ├─MaterialTestimony.vue
+|  |     |  ├─Subheading.vue
+|  |     |  └VComponent.vue
+|  ├─assets
+|  |   ├─clint-mckoy.jpg
+|  |   ├─lock.jpg
+|  |   ├─login.jpg
+|  |   ├─logo.png
+|  |   ├─pricing.jpg
+|  |   ├─register.jpg
+|  |   └vuetify.svg
+├─public
+|   ├─favicon.ico
+|   ├─favicon.png
+|   └index.html

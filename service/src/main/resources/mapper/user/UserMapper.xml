@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.bbs.mapper.user.UserDao">
+    <resultMap id="UserEntity" type="com.example.bbs.mapper.user.bean.UserEntity"/>
+
+    <sql id="baseSql">
+        u.id,
+        u.fullname,
+        u.username,
+        u.email,
+        u.password,
+        u.gender,
+        u.photo,
+        u.create_time,
+        u.certified_information,
+        u.my_posts,
+        u.star_posts,
+        u.star_users,
+        u.messages,
+        u.tags,
+        u.click,
+        u.locked
+    </sql>
+
+
+</mapper>

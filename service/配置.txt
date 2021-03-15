@@ -1,0 +1,15 @@
+后端端口:
+localhost:8001
+
+打开swagger:
+localhost:8001/swagger-ui.html
+
+前端端口
+localhost:8080
+
+vue-ui端口：8000
+
+邮箱:发送验证码
+2467688043@qq.com
+dreamsup123
+授权码 cybvksjgwnuodjid

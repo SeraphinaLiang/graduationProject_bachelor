@@ -1,0 +1,543 @@
+C:\Users\pc\IdeaProjects\graduationProject\bbs_service
+├─.gitignore
+├─bbs.iml
+├─database.sql
+├─HELP.md
+├─mvnw
+├─mvnw.cmd
+├─pom.xml
+├─README.md
+├─service.iml
+├─tree.txt
+├─配置.txt
+├─target
+|   ├─test-classes
+|   |      ├─com
+|   |      |  ├─example
+|   |      |  |    ├─bbs
+|   |      |  |    |  └BbsApplicationTests.class
+|   ├─generated-test-sources
+|   |           ├─test-annotations
+|   ├─generated-sources
+|   |         ├─annotations
+|   ├─classes
+|   |    ├─application.properties
+|   |    ├─application.yml
+|   |    ├─hanlp.properties
+|   |    ├─static
+|   |    |   ├─banner.jpg
+|   |    |   └SensitiveWords.txt
+|   |    ├─META-INF
+|   |    |    └spring-devtools.properties
+|   |    ├─mapper
+|   |    |   ├─user
+|   |    |   |  └UserMapper.xml
+|   |    |   ├─tag
+|   |    |   |  └TagMapper.xml
+|   |    |   ├─star
+|   |    |   |  └StarMapper.xml
+|   |    |   ├─post
+|   |    |   |  └PostMapper.xml
+|   |    |   ├─module
+|   |    |   |   └ModuleMapper.xml
+|   |    |   ├─message
+|   |    |   |    └messageMapper.xml
+|   |    |   ├─comment
+|   |    |   |    └CommentMapper.xml
+|   |    ├─data
+|   |    |  ├─model
+|   |    |  |   ├─perceptron
+|   |    |  |   |     ├─pku199801
+|   |    |  |   |     |     ├─cws.bin
+|   |    |  |   |     |     ├─ner.bin
+|   |    |  |   |     |     └pos.bin
+|   |    |  |   |     ├─pku1998
+|   |    |  |   |     |    ├─cws.bin
+|   |    |  |   |     |    ├─ner.bin
+|   |    |  |   |     |    └pos.bin
+|   |    |  |   |     ├─large
+|   |    |  |   |     |   └cws.bin
+|   |    |  |   |     ├─ctb
+|   |    |  |   |     |  └pos.bin
+|   |    |  |   ├─dependency
+|   |    |  |   |     ├─NNParserModel.licence.txt
+|   |    |  |   |     ├─NNParserModel.txt.bin
+|   |    |  |   |     ├─NNParserModel.txt.description.txt
+|   |    |  |   |     ├─perceptron.bin
+|   |    |  |   |     ├─WordNature.txt.bi.bin
+|   |    |  |   |     └WordNature.txt.bin
+|   |    |  |   ├─crf
+|   |    |  |   |  ├─pku199801
+|   |    |  |   |  |     ├─cws.txt.bin
+|   |    |  |   |  |     ├─ner.txt.bin
+|   |    |  |   |  |     └pos.txt.bin
+|   |    |  ├─dictionary
+|   |    |  |     ├─CoreNatureDictionary.mini.txt
+|   |    |  |     ├─CoreNatureDictionary.mini.txt.bin
+|   |    |  |     ├─CoreNatureDictionary.ngram.mini.txt
+|   |    |  |     ├─CoreNatureDictionary.ngram.mini.txt.table.bin
+|   |    |  |     ├─CoreNatureDictionary.ngram.txt
+|   |    |  |     ├─CoreNatureDictionary.ngram.txt.table.bin
+|   |    |  |     ├─CoreNatureDictionary.tr.txt
+|   |    |  |     ├─CoreNatureDictionary.txt
+|   |    |  |     ├─CoreNatureDictionary.txt.bin
+|   |    |  |     ├─stopwords.txt
+|   |    |  |     ├─stopwords.txt.bin
+|   |    |  |     ├─tc
+|   |    |  |     | ├─hk2s.bin
+|   |    |  |     | ├─hk2t.bin
+|   |    |  |     | ├─hk2tw.bin
+|   |    |  |     | ├─s2hk.bin
+|   |    |  |     | ├─s2t.txt
+|   |    |  |     | ├─s2t.txt.bin
+|   |    |  |     | ├─s2tw.bin
+|   |    |  |     | ├─t2hk.bin
+|   |    |  |     | ├─t2hk.txt
+|   |    |  |     | ├─t2s.txt
+|   |    |  |     | ├─t2s.txt.bin
+|   |    |  |     | ├─t2tw.bin
+|   |    |  |     | ├─t2tw.txt
+|   |    |  |     | ├─tw2hk.bin
+|   |    |  |     | ├─tw2s.bin
+|   |    |  |     | └tw2t.bin
+|   |    |  |     ├─synonym
+|   |    |  |     |    └CoreSynonym.txt
+|   |    |  |     ├─place
+|   |    |  |     |   ├─ns.tr.txt
+|   |    |  |     |   ├─ns.txt
+|   |    |  |     |   └ns.txt.bin
+|   |    |  |     ├─pinyin
+|   |    |  |     |   ├─pinyin.txt
+|   |    |  |     |   └pinyin.txt.bin
+|   |    |  |     ├─person
+|   |    |  |     |   ├─nr.tr.txt
+|   |    |  |     |   ├─nr.txt
+|   |    |  |     |   ├─nr.txt.bin
+|   |    |  |     |   ├─nrf.txt
+|   |    |  |     |   ├─nrf.txt.trie.dat
+|   |    |  |     |   ├─nrj.txt
+|   |    |  |     |   ├─nrj.txt.trie.dat
+|   |    |  |     |   └nrj.txt.value.dat
+|   |    |  |     ├─other
+|   |    |  |     |   ├─CharTable.txt
+|   |    |  |     |   ├─CharTable.txt.bin
+|   |    |  |     |   ├─CharType.bin
+|   |    |  |     |   └TagPKU98.csv
+|   |    |  |     ├─organization
+|   |    |  |     |      ├─nt.tr.txt
+|   |    |  |     |      ├─nt.txt
+|   |    |  |     |      └nt.txt.bin
+|   |    |  |     ├─custom
+|   |    |  |     |   ├─CustomDictionary.txt
+|   |    |  |     |   ├─CustomDictionary.txt.bin
+|   |    |  |     |   ├─上海地名.txt
+|   |    |  |     |   ├─人名词典.txt
+|   |    |  |     |   ├─全国地名大全.txt
+|   |    |  |     |   ├─机构名词典.txt
+|   |    |  |     |   └现代汉语补充词库.txt
+|   |    ├─com
+|   |    |  ├─example
+|   |    |  |    ├─bbs
+|   |    |  |    |  ├─BBSApplication.class
+|   |    |  |    |  ├─util
+|   |    |  |    |  |  ├─JwtUtils.class
+|   |    |  |    |  |  ├─ResourceFileIoAdapter.class
+|   |    |  |    |  |  ├─nlp
+|   |    |  |    |  |  |  ├─Crf.class
+|   |    |  |    |  |  |  ├─KeyWordExtract.class
+|   |    |  |    |  |  |  ├─TextSuggest.class
+|   |    |  |    |  |  |  ├─token.class
+|   |    |  |    |  |  |  ├─dataType
+|   |    |  |    |  |  |  |    ├─ExtractWord.class
+|   |    |  |    |  |  |  |    └SentenceArray.class
+|   |    |  |    |  |  ├─hanlp
+|   |    |  |    |  |  |   ├─TextSuggest.class
+|   |    |  |    |  |  |   └WordSegment.class
+|   |    |  |    |  ├─shiro
+|   |    |  |    |  |   ├─AccountProfile.class
+|   |    |  |    |  |   ├─AccountRealm.class
+|   |    |  |    |  |   ├─JwtFilter.class
+|   |    |  |    |  |   └JwtToken.class
+|   |    |  |    |  ├─service
+|   |    |  |    |  |    ├─functional
+|   |    |  |    |  |    |     ├─MailService.class
+|   |    |  |    |  |    |     ├─SensitiveService$1.class
+|   |    |  |    |  |    |     ├─SensitiveService$TrieNode.class
+|   |    |  |    |  |    |     ├─SensitiveService.class
+|   |    |  |    |  |    |     ├─UserEditService.class
+|   |    |  |    |  |    |     └UserEditServiceImpl.class
+|   |    |  |    |  |    ├─basic
+|   |    |  |    |  |    |   ├─CommentService.class
+|   |    |  |    |  |    |   ├─MessageService.class
+|   |    |  |    |  |    |   ├─ModuleService.class
+|   |    |  |    |  |    |   ├─PostService.class
+|   |    |  |    |  |    |   ├─StarService.class
+|   |    |  |    |  |    |   ├─TagService.class
+|   |    |  |    |  |    |   ├─UserService.class
+|   |    |  |    |  |    |   ├─implement
+|   |    |  |    |  |    |   |     ├─CommentServiceImpl.class
+|   |    |  |    |  |    |   |     ├─ModuleServiceImpl$HotModuleInfo.class
+|   |    |  |    |  |    |   |     ├─ModuleServiceImpl$ResPageData.class
+|   |    |  |    |  |    |   |     ├─ModuleServiceImpl.class
+|   |    |  |    |  |    |   |     ├─PostServiceImpl.class
+|   |    |  |    |  |    |   |     ├─StarServiceImpl.class
+|   |    |  |    |  |    |   |     ├─TagServiceImpl.class
+|   |    |  |    |  |    |   |     └UserServiceImpl.class
+|   |    |  |    |  ├─mapper
+|   |    |  |    |  |   ├─user
+|   |    |  |    |  |   |  ├─UserDao.class
+|   |    |  |    |  |   |  ├─bean
+|   |    |  |    |  |   |  |  ├─UserEntity.class
+|   |    |  |    |  |   |  |  ├─dto
+|   |    |  |    |  |   |  |  |  ├─UserLoginDTO.class
+|   |    |  |    |  |   |  |  |  ├─UserModifiedDTO.class
+|   |    |  |    |  |   |  |  |  ├─UserPasswordEditDTO.class
+|   |    |  |    |  |   |  |  |  └UserRegisterDTO.class
+|   |    |  |    |  |   ├─tag
+|   |    |  |    |  |   |  ├─TagDao.class
+|   |    |  |    |  |   |  ├─bean
+|   |    |  |    |  |   |  |  ├─TagEntity.class
+|   |    |  |    |  |   |  |  └TagHot.class
+|   |    |  |    |  |   ├─star
+|   |    |  |    |  |   |  ├─StarDao.class
+|   |    |  |    |  |   |  ├─bean
+|   |    |  |    |  |   |  |  └StarEntity.class
+|   |    |  |    |  |   ├─post
+|   |    |  |    |  |   |  ├─PostDao.class
+|   |    |  |    |  |   |  ├─bean
+|   |    |  |    |  |   |  |  └PostEntity.class
+|   |    |  |    |  |   ├─module
+|   |    |  |    |  |   |   ├─ModuleDao.class
+|   |    |  |    |  |   |   ├─bean
+|   |    |  |    |  |   |   |  └ModuleEntity.class
+|   |    |  |    |  |   ├─message
+|   |    |  |    |  |   |    ├─MessageDao.class
+|   |    |  |    |  |   |    └MessageEntity.class
+|   |    |  |    |  |   ├─comment
+|   |    |  |    |  |   |    ├─CommentDao.class
+|   |    |  |    |  |   |    ├─bean
+|   |    |  |    |  |   |    |  ├─AddCommentDTO.class
+|   |    |  |    |  |   |    |  └CommentEntity.class
+|   |    |  |    |  ├─handler
+|   |    |  |    |  |    └MyMetaObjectHandler.class
+|   |    |  |    |  ├─controller
+|   |    |  |    |  |     ├─funtional
+|   |    |  |    |  |     |     ├─LoginLogoutController.class
+|   |    |  |    |  |     |     ├─MailController.class
+|   |    |  |    |  |     |     ├─ManagementController.class
+|   |    |  |    |  |     |     ├─SearchController.class
+|   |    |  |    |  |     |     └UserEditController.class
+|   |    |  |    |  |     ├─basic
+|   |    |  |    |  |     |   ├─CommentController.class
+|   |    |  |    |  |     |   ├─ModuleController.class
+|   |    |  |    |  |     |   ├─PostController.class
+|   |    |  |    |  |     |   ├─StarController.class
+|   |    |  |    |  |     |   ├─TagController.class
+|   |    |  |    |  |     |   └UserController.class
+|   |    |  |    |  ├─config
+|   |    |  |    |  |   ├─CorsConfig.class
+|   |    |  |    |  |   ├─MybatisPlusConfig.class
+|   |    |  |    |  |   ├─ShiroConfig.class
+|   |    |  |    |  |   └SwaggerConfig.class
+|   |    |  |    |  ├─common
+|   |    |  |    |  |   ├─exception
+|   |    |  |    |  |   |     └GlobalExceptionHandler.class
+|   |    |  |    |  |   ├─domain
+|   |    |  |    |  |   |   ├─BaseEntity.class
+|   |    |  |    |  |   |   ├─BaseEnum$DeletedQuotationAware.class
+|   |    |  |    |  |   |   ├─BaseEnum.class
+|   |    |  |    |  |   |   ├─OrderItemDTO.class
+|   |    |  |    |  |   |   ├─PageParamDTO.class
+|   |    |  |    |  |   |   ├─PageResultDTO.class
+|   |    |  |    |  |   |   ├─ResponseDTO.class
+|   |    |  |    |  |   |   └Result.class
+|   |    |  |    |  |   ├─constant
+|   |    |  |    |  |   |    └ResponseCodeConst.class
+├─src
+|  ├─test
+|  |  ├─java
+|  |  |  ├─com
+|  |  |  |  ├─example
+|  |  |  |  |    ├─bbs
+|  |  |  |  |    |  └BbsApplicationTests.java
+|  ├─main
+|  |  ├─resources
+|  |  |     ├─application.properties
+|  |  |     ├─application.yml
+|  |  |     ├─hanlp.properties
+|  |  |     ├─static
+|  |  |     |   ├─banner.jpg
+|  |  |     |   └SensitiveWords.txt
+|  |  |     ├─META-INF
+|  |  |     |    └spring-devtools.properties
+|  |  |     ├─mapper
+|  |  |     |   ├─user
+|  |  |     |   |  └UserMapper.xml
+|  |  |     |   ├─tag
+|  |  |     |   |  └TagMapper.xml
+|  |  |     |   ├─star
+|  |  |     |   |  └StarMapper.xml
+|  |  |     |   ├─post
+|  |  |     |   |  └PostMapper.xml
+|  |  |     |   ├─module
+|  |  |     |   |   └ModuleMapper.xml
+|  |  |     |   ├─message
+|  |  |     |   |    └messageMapper.xml
+|  |  |     |   ├─comment
+|  |  |     |   |    └CommentMapper.xml
+|  |  |     ├─data
+|  |  |     |  ├─model
+|  |  |     |  |   ├─perceptron
+|  |  |     |  |   |     ├─pku199801
+|  |  |     |  |   |     |     ├─cws.bin
+|  |  |     |  |   |     |     ├─ner.bin
+|  |  |     |  |   |     |     └pos.bin
+|  |  |     |  |   |     ├─pku1998
+|  |  |     |  |   |     |    ├─cws.bin
+|  |  |     |  |   |     |    ├─ner.bin
+|  |  |     |  |   |     |    └pos.bin
+|  |  |     |  |   |     ├─large
+|  |  |     |  |   |     |   └cws.bin
+|  |  |     |  |   |     ├─ctb
+|  |  |     |  |   |     |  └pos.bin
+|  |  |     |  |   ├─dependency
+|  |  |     |  |   |     ├─NNParserModel.licence.txt
+|  |  |     |  |   |     ├─NNParserModel.txt.bin
+|  |  |     |  |   |     ├─NNParserModel.txt.description.txt
+|  |  |     |  |   |     ├─perceptron.bin
+|  |  |     |  |   |     ├─WordNature.txt.bi.bin
+|  |  |     |  |   |     └WordNature.txt.bin
+|  |  |     |  |   ├─crf
+|  |  |     |  |   |  ├─pku199801
+|  |  |     |  |   |  |     ├─cws.txt.bin
+|  |  |     |  |   |  |     ├─ner.txt.bin
+|  |  |     |  |   |  |     └pos.txt.bin
+|  |  |     |  ├─dictionary
+|  |  |     |  |     ├─CoreNatureDictionary.mini.txt
+|  |  |     |  |     ├─CoreNatureDictionary.mini.txt.bin
+|  |  |     |  |     ├─CoreNatureDictionary.ngram.mini.txt
+|  |  |     |  |     ├─CoreNatureDictionary.ngram.mini.txt.table.bin
+|  |  |     |  |     ├─CoreNatureDictionary.ngram.txt
+|  |  |     |  |     ├─CoreNatureDictionary.ngram.txt.table.bin
+|  |  |     |  |     ├─CoreNatureDictionary.tr.txt
+|  |  |     |  |     ├─CoreNatureDictionary.txt
+|  |  |     |  |     ├─CoreNatureDictionary.txt.bin
+|  |  |     |  |     ├─stopwords.txt
+|  |  |     |  |     ├─stopwords.txt.bin
+|  |  |     |  |     ├─tc
+|  |  |     |  |     | ├─hk2s.bin
+|  |  |     |  |     | ├─hk2t.bin
+|  |  |     |  |     | ├─hk2tw.bin
+|  |  |     |  |     | ├─s2hk.bin
+|  |  |     |  |     | ├─s2t.txt
+|  |  |     |  |     | ├─s2t.txt.bin
+|  |  |     |  |     | ├─s2tw.bin
+|  |  |     |  |     | ├─t2hk.bin
+|  |  |     |  |     | ├─t2hk.txt
+|  |  |     |  |     | ├─t2s.txt
+|  |  |     |  |     | ├─t2s.txt.bin
+|  |  |     |  |     | ├─t2tw.bin
+|  |  |     |  |     | ├─t2tw.txt
+|  |  |     |  |     | ├─tw2hk.bin
+|  |  |     |  |     | ├─tw2s.bin
+|  |  |     |  |     | └tw2t.bin
+|  |  |     |  |     ├─synonym
+|  |  |     |  |     |    └CoreSynonym.txt
+|  |  |     |  |     ├─place
+|  |  |     |  |     |   ├─ns.tr.txt
+|  |  |     |  |     |   ├─ns.txt
+|  |  |     |  |     |   └ns.txt.bin
+|  |  |     |  |     ├─pinyin
+|  |  |     |  |     |   ├─pinyin.txt
+|  |  |     |  |     |   └pinyin.txt.bin
+|  |  |     |  |     ├─person
+|  |  |     |  |     |   ├─nr.tr.txt
+|  |  |     |  |     |   ├─nr.txt
+|  |  |     |  |     |   ├─nr.txt.bin
+|  |  |     |  |     |   ├─nrf.txt
+|  |  |     |  |     |   ├─nrf.txt.trie.dat
+|  |  |     |  |     |   ├─nrj.txt
+|  |  |     |  |     |   ├─nrj.txt.trie.dat
+|  |  |     |  |     |   └nrj.txt.value.dat
+|  |  |     |  |     ├─other
+|  |  |     |  |     |   ├─CharTable.txt
+|  |  |     |  |     |   ├─CharTable.txt.bin
+|  |  |     |  |     |   ├─CharType.bin
+|  |  |     |  |     |   └TagPKU98.csv
+|  |  |     |  |     ├─organization
+|  |  |     |  |     |      ├─nt.tr.txt
+|  |  |     |  |     |      ├─nt.txt
+|  |  |     |  |     |      └nt.txt.bin
+|  |  |     |  |     ├─custom
+|  |  |     |  |     |   ├─CustomDictionary.txt
+|  |  |     |  |     |   ├─CustomDictionary.txt.bin
+|  |  |     |  |     |   ├─上海地名.txt
+|  |  |     |  |     |   ├─人名词典.txt
+|  |  |     |  |     |   ├─全国地名大全.txt
+|  |  |     |  |     |   ├─机构名词典.txt
+|  |  |     |  |     |   └现代汉语补充词库.txt
+|  |  ├─java
+|  |  |  ├─com
+|  |  |  |  ├─example
+|  |  |  |  |    ├─bbs
+|  |  |  |  |    |  ├─BBSApplication.java
+|  |  |  |  |    |  ├─util
+|  |  |  |  |    |  |  ├─JwtUtils.java
+|  |  |  |  |    |  |  ├─ResourceFileIoAdapter.java
+|  |  |  |  |    |  |  ├─nlp
+|  |  |  |  |    |  |  |  ├─Crf.java
+|  |  |  |  |    |  |  |  ├─KeyWordExtract.java
+|  |  |  |  |    |  |  |  ├─TextSuggest.java
+|  |  |  |  |    |  |  |  ├─token.java
+|  |  |  |  |    |  |  |  ├─dataType
+|  |  |  |  |    |  |  |  |    ├─ExtractWord.java
+|  |  |  |  |    |  |  |  |    └SentenceArray.java
+|  |  |  |  |    |  |  ├─hanlp
+|  |  |  |  |    |  |  |   ├─TextSuggest.java
+|  |  |  |  |    |  |  |   └WordSegment.java
+|  |  |  |  |    |  ├─shiro
+|  |  |  |  |    |  |   ├─AccountProfile.java
+|  |  |  |  |    |  |   ├─AccountRealm.java
+|  |  |  |  |    |  |   ├─JwtFilter.java
+|  |  |  |  |    |  |   └JwtToken.java
+|  |  |  |  |    |  ├─service
+|  |  |  |  |    |  |    ├─functional
+|  |  |  |  |    |  |    |     ├─MailService.java
+|  |  |  |  |    |  |    |     ├─SensitiveService.java
+|  |  |  |  |    |  |    |     ├─UserEditService.java
+|  |  |  |  |    |  |    |     └UserEditServiceImpl.java
+|  |  |  |  |    |  |    ├─basic
+|  |  |  |  |    |  |    |   ├─CommentService.java
+|  |  |  |  |    |  |    |   ├─MessageService.java
+|  |  |  |  |    |  |    |   ├─ModuleService.java
+|  |  |  |  |    |  |    |   ├─PostService.java
+|  |  |  |  |    |  |    |   ├─StarService.java
+|  |  |  |  |    |  |    |   ├─TagService.java
+|  |  |  |  |    |  |    |   ├─UserService.java
+|  |  |  |  |    |  |    |   ├─implement
+|  |  |  |  |    |  |    |   |     ├─CommentServiceImpl.java
+|  |  |  |  |    |  |    |   |     ├─ModuleServiceImpl.java
+|  |  |  |  |    |  |    |   |     ├─PostServiceImpl.java
+|  |  |  |  |    |  |    |   |     ├─StarServiceImpl.java
+|  |  |  |  |    |  |    |   |     ├─TagServiceImpl.java
+|  |  |  |  |    |  |    |   |     └UserServiceImpl.java
+|  |  |  |  |    |  ├─mapper
+|  |  |  |  |    |  |   ├─user
+|  |  |  |  |    |  |   |  ├─UserDao.java
+|  |  |  |  |    |  |   |  ├─bean
+|  |  |  |  |    |  |   |  |  ├─UserEntity.java
+|  |  |  |  |    |  |   |  |  ├─dto
+|  |  |  |  |    |  |   |  |  |  ├─UserLoginDTO.java
+|  |  |  |  |    |  |   |  |  |  ├─UserModifiedDTO.java
+|  |  |  |  |    |  |   |  |  |  ├─UserPasswordEditDTO.java
+|  |  |  |  |    |  |   |  |  |  └UserRegisterDTO.java
+|  |  |  |  |    |  |   ├─tag
+|  |  |  |  |    |  |   |  ├─TagDao.java
+|  |  |  |  |    |  |   |  ├─bean
+|  |  |  |  |    |  |   |  |  ├─TagEntity.java
+|  |  |  |  |    |  |   |  |  └TagHot.java
+|  |  |  |  |    |  |   ├─star
+|  |  |  |  |    |  |   |  ├─StarDao.java
+|  |  |  |  |    |  |   |  ├─bean
+|  |  |  |  |    |  |   |  |  └StarEntity.java
+|  |  |  |  |    |  |   ├─post
+|  |  |  |  |    |  |   |  ├─PostDao.java
+|  |  |  |  |    |  |   |  ├─bean
+|  |  |  |  |    |  |   |  |  ├─PostEntity.java
+|  |  |  |  |    |  |   |  |  ├─dto
+|  |  |  |  |    |  |   ├─module
+|  |  |  |  |    |  |   |   ├─ModuleDao.java
+|  |  |  |  |    |  |   |   ├─bean
+|  |  |  |  |    |  |   |   |  └ModuleEntity.java
+|  |  |  |  |    |  |   ├─message
+|  |  |  |  |    |  |   |    ├─MessageDao.java
+|  |  |  |  |    |  |   |    └MessageEntity.java
+|  |  |  |  |    |  |   ├─comment
+|  |  |  |  |    |  |   |    ├─CommentDao.java
+|  |  |  |  |    |  |   |    ├─bean
+|  |  |  |  |    |  |   |    |  ├─AddCommentDTO.java
+|  |  |  |  |    |  |   |    |  └CommentEntity.java
+|  |  |  |  |    |  ├─handler
+|  |  |  |  |    |  |    └MyMetaObjectHandler.java
+|  |  |  |  |    |  ├─controller
+|  |  |  |  |    |  |     ├─funtional
+|  |  |  |  |    |  |     |     ├─LoginLogoutController.java
+|  |  |  |  |    |  |     |     ├─MailController.java
+|  |  |  |  |    |  |     |     ├─ManagementController.java
+|  |  |  |  |    |  |     |     ├─SearchController.java
+|  |  |  |  |    |  |     |     └UserEditController.java
+|  |  |  |  |    |  |     ├─basic
+|  |  |  |  |    |  |     |   ├─CommentController.java
+|  |  |  |  |    |  |     |   ├─ModuleController.java
+|  |  |  |  |    |  |     |   ├─PostController.java
+|  |  |  |  |    |  |     |   ├─StarController.java
+|  |  |  |  |    |  |     |   ├─TagController.java
+|  |  |  |  |    |  |     |   └UserController.java
+|  |  |  |  |    |  ├─config
+|  |  |  |  |    |  |   ├─CorsConfig.java
+|  |  |  |  |    |  |   ├─MybatisPlusConfig.java
+|  |  |  |  |    |  |   ├─ShiroConfig.java
+|  |  |  |  |    |  |   └SwaggerConfig.java
+|  |  |  |  |    |  ├─common
+|  |  |  |  |    |  |   ├─exception
+|  |  |  |  |    |  |   |     └GlobalExceptionHandler.java
+|  |  |  |  |    |  |   ├─domain
+|  |  |  |  |    |  |   |   ├─BaseEntity.java
+|  |  |  |  |    |  |   |   ├─BaseEnum.java
+|  |  |  |  |    |  |   |   ├─OrderItemDTO.java
+|  |  |  |  |    |  |   |   ├─PageParamDTO.java
+|  |  |  |  |    |  |   |   ├─PageResultDTO.java
+|  |  |  |  |    |  |   |   ├─ResponseDTO.java
+|  |  |  |  |    |  |   |   └Result.java
+|  |  |  |  |    |  |   ├─constant
+|  |  |  |  |    |  |   |    └ResponseCodeConst.java
+├─lib
+|  ├─javax.ejb.jar
+|  ├─javax.jms.jar
+|  ├─javax.persistence.jar
+|  ├─javax.resource.jar
+|  ├─javax.servlet.jsp.jar
+|  ├─javax.servlet.jsp.jstl.jar
+|  └javax.transaction.jar
+├─.mvn
+|  ├─wrapper
+|  |    ├─maven-wrapper.jar
+|  |    ├─maven-wrapper.properties
+|  |    └MavenWrapperDownloader.java
+├─.idea
+|   ├─.gitignore
+|   ├─.name
+|   ├─compiler.xml
+|   ├─dataSources.local.xml
+|   ├─dataSources.xml
+|   ├─encodings.xml
+|   ├─jarRepositories.xml
+|   ├─misc.xml
+|   ├─modules.xml
+|   ├─sqldialects.xml
+|   ├─uiDesigner.xml
+|   ├─vcs.xml
+|   ├─workspace.xml
+|   ├─libraries
+|  ├─logs
+|  |  ├─HEAD
+|  |  ├─refs
+|  |  |  ├─remotes
+|  |  |  |    ├─origin
+|  |  |  |    |   └master
+|  |  |  ├─heads
+|  |  |  |   └master
+|  ├─info
+|  |  └exclude
+|  ├─hooks
+|  |   ├─applypatch-msg.sample
+|  |   ├─commit-msg.sample
+|  |   ├─fsmonitor-watchman.sample
+|  |   ├─post-update.sample
+|  |   ├─pre-applypatch.sample
+|  |   ├─pre-commit.sample
+|  |   ├─pre-push.sample
+|  |   ├─pre-rebase.sample
+|  |   ├─pre-receive.sample
+|  |   ├─prepare-commit-msg.sample
+|  |   └update.sample

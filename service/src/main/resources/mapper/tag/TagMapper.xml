@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.bbs.mapper.tag.TagDao">
+    <resultMap id="TagEntity" type="com.example.bbs.mapper.tag.bean.TagEntity"/>
+
+    <select id="hotTag" resultType="com.example.bbs.mapper.tag.bean.TagHot">
+           select name, count(name) as num from t_tag
+            group by name
+           order by count(name) desc
+    </select>
+</mapper>
